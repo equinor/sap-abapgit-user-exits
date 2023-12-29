@@ -1,7 +1,11 @@
 # abapGit user exits
 
 ## PRE_CALCULATE_REPO_STATUS
-Remove application and authorization group from open-source programs before comparing to find differences
+Remove application and authorization group from open-source programs before comparing to find differences.
+
+# Legacy branch: ecc
+The root package name in ECC is different from the root package name in S/4 HANA.  
+Branch ecc should not be merged into main.
 
 # Contributing
 Contributions are welcome, in particular improvement suggestions to either the code or this documentat.
