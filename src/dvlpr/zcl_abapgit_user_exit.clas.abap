@@ -1,13 +1,12 @@
 CLASS zcl_abapgit_user_exit DEFINITION
-  PUBLIC
-  FINAL
+  PUBLIC FINAL
   CREATE PUBLIC.
 
   PUBLIC SECTION.
     INTERFACES zif_abapgit_exit.
 
   PRIVATE SECTION.
-    CONSTANTS root_package_open_source TYPE devclass VALUE 'ZGS_OPEN_SOURCE'.
+    CONSTANTS root_package_open_source TYPE devclass VALUE 'ZCA_OPEN_SOURCE'.
 ENDCLASS.
 
 
@@ -75,9 +74,9 @@ CLASS zcl_abapgit_user_exit IMPLEMENTATION.
     ENDIF.
 
     SELECT SINGLE FROM tdevc
-           FIELDS parentcl
-           WHERE devclass = @is_repo_meta-package
-           INTO @DATA(parent_package).
+      FIELDS parentcl
+      WHERE devclass = @is_repo_meta-package
+      INTO @DATA(parent_package).
     IF sy-subrc = 0 AND parent_package = root_package_open_source.
       zcl_abapgit_xml_stripper=>process_files( EXPORTING iv_config = |remove PROG:/PROGDIR/APPL\n|
                                                                    & |remove PROG:/PROGDIR/SECU|
