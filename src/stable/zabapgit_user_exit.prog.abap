@@ -8,7 +8,7 @@ CLASS zcl_abapgit_user_exit DEFINITION FINAL
     INTERFACES zif_abapgit_exit.
 
   PRIVATE SECTION.
-    CONSTANTS root_package_open_source TYPE devclass VALUE 'ZCA_OPEN_SOURCE'.
+    CONSTANTS root_package_open_source TYPE devclass VALUE 'ZGS_OPEN_SOURCE'.
 ENDCLASS.
 
 
