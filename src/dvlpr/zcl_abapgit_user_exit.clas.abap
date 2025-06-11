@@ -102,4 +102,10 @@ CLASS zcl_abapgit_user_exit IMPLEMENTATION.
 
   METHOD zif_abapgit_exit~change_rfc_server_group.
   ENDMETHOD.
+
+  METHOD zif_abapgit_exit~change_committer_info.
+  ENDMETHOD.
+
+  METHOD zif_abapgit_exit~enhance_any_toolbar.
+  ENDMETHOD.
 ENDCLASS.
