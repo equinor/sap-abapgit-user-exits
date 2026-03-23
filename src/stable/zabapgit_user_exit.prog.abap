@@ -110,4 +110,7 @@ CLASS zcl_abapgit_user_exit IMPLEMENTATION.
 
   METHOD zif_abapgit_exit~enhance_any_toolbar.
   ENDMETHOD.
+
+  METHOD zif_abapgit_exit~validate_after_push.
+  ENDMETHOD.
 ENDCLASS.
