@@ -108,4 +108,16 @@ CLASS zcl_abapgit_user_exit IMPLEMENTATION.
 
   METHOD zif_abapgit_exit~enhance_any_toolbar.
   ENDMETHOD.
+
+  METHOD zif_abapgit_exit~adjust_commit_message.
+  ENDMETHOD.
+
+  METHOD zif_abapgit_exit~change_password_popup_username.
+  ENDMETHOD.
+
+  METHOD zif_abapgit_exit~enable_adjust_commit_message.
+  ENDMETHOD.
+
+  METHOD zif_abapgit_exit~validate_after_push.
+  ENDMETHOD.
 ENDCLASS.
